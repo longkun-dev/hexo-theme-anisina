@@ -37,7 +37,7 @@ layout: layout
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <!-- 目录列表 -->
             <% site.categories.map(function(category){ %>
-                <div class="one-tag-list">
+                <div class="one-tag-list" style="margin-top: 13px;">
                 <% if (category.posts.length > 0) { %>
                     <span class="fa fa-minus-square-o listing-seperator" id="<%= category.name %>">
                         <span class="tag-text"><%= category.name %></span>

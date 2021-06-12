@@ -132,7 +132,7 @@ layout: layout
                     <div class="about-me">
                         <!--移动端头部显示-->
                         <img src="<%= config['sidebar-avatar'] %>"/>
-                        <h5><a href="<%= config.root %>about/"><%= config.author %></a></h5>
+                        <h5 style="font-size: 40px;"><a href="<%= config.root %>about/"><%= config.author %></a></h5>
                         <p><%= config['sidebar-about-description'] %></p>
                     </div>
                 </div>
@@ -157,13 +157,13 @@ layout: layout
             ">
 
             <!-- About Me -->
-            <section class="visible-md visible-lg" style="padding: 0 18px">
+            <section class="visible-md visible-lg" style="padding: 0 18px;margin-bottom: 35px;">
                 <div class="short-about">
                     <!--侧边栏头像-->
                     <% if(config['sidebar-avatar']) { %>
                     <img src="<%= config['sidebar-avatar'] %>"/>
                     <% } %>
-                    <h5><a href="<%= config.root %>about/"><%= config.author %></a></h5>
+                    <h5 style="font-size: 40px;"><a href="<%= config.root %>about/"><%= config.author %></a></h5>
                     <% if(config['sidebar-about-description']) { %>
                     <p><%= config['sidebar-about-description'] %></p>
                     <% } %>
@@ -250,13 +250,14 @@ layout: layout
 
             <!-- Featured Tags  标签 -->
             <% if(config['featured-tags']) { %>
-            <section>
+            <section style="margin-bottom: 25px;">
+                <h5 style="text-align: center;">Tags</h5>
                 <div class="tags">
                     <% site.tags.map(function(tag){ %>
-                    <% if(tag.length > config['featured-condition-size']) { %>
-                    <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"
-                       rel="<%= tag.length %>"><%= tag.name %></a>
-                    <% } %>
+                        <% if(site.tags.length > config['featured-condition-size']) { %>
+                        <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"
+                        rel="<%= tag.length %>"><%= tag.name %></a>
+                        <% } %>
                     <% }) %>
                 </div>
             </section>

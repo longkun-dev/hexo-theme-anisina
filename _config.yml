@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Haojen # your blog title name
+title: chenxii
 subtitle:  
-author: Haojen Ma # 作者
-language: 
+author: chenxii
+language: zh-CN
 timezone: 
 
 # custom Site settings
 # more detail check out docs
-SEOTitle: Haojen's blog 
-header-img: //o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg
-email: HaojenMa@gmail.com
-description: "马浩珍在 Github 上的个人博客"
-keyword: # seo key words
+SEOTitle: Chenxii's blog 
+header-img: http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg
+email: zhulongkun20@gmail.com
+description: ""
+keyword: 个人博客
 
 favicon: # your favicon png
 # custom end
@@ -29,12 +29,12 @@ permalink_defaults:
 
 # SNS settings
 # RSS:
-weibo_username: haojen
-zhihu_username: megahertz
-github_username: haojen
-twitter_username: ehazon
-facebook_username:  
-linkedin_username:  
+# weibo_username: haojen
+# zhihu_username: megahertz
+# github_username: haojen
+# twitter_username: ehazon
+# facebook_username:  
+# linkedin_username:  
 
 # Build settings
 anchorjs: false                        # if you want to customize anchor. check out line:181 of `post.html`
@@ -46,7 +46,7 @@ disqus_username:
 # Duoshuo settings
 duoshuo_username:  # 你的多说帐号
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+duoshuo_share: false                     # set to false if you want to use Comment without Sharing
 
 # Use livere
 use_livere:
@@ -69,8 +69,8 @@ ga_track_id:             # Format: UA-xxxxxx-xx
 ga_domain:
 
 # Sidebar settings
-sidebar-about-description: # 个人描述
-sidebar-avatar:     # use absolute URL
+sidebar-about-description: 求知若饥，虚心若愚。
+# sidebar-avatar:     # use absolute URL
 
 
 # Featured Tags
@@ -78,7 +78,14 @@ featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 # friends
-friends:  # 友链
+friends: [{
+    title: "your friend title",
+    href: "your fiend path"
+  },
+  {
+    title: "your friend title 2",
+    href: "your friend path 2"
+  }]
 
 # Directory
 source_dir: source
@@ -151,13 +158,13 @@ cdn-url:  # 你的CDN地址
 
 # Qiniu imageView2 API
 # More info http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
-clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
-clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
-clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
+clip-content: "http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg"
+clip-avatar: "http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg"
+clip-home-post-bg: "http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg"
 
 # post default images
-post-default-img: #博文默认的图片
-post-default-img-mobile: #移动端显示的图片
+post-default-img: http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg
+post-default-img-mobile: http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg
 
 # search api , set your custom key
 swiftype_key: 
@@ -165,5 +172,5 @@ swiftype_key:
 
 # archive page title 
 archive:
-    title: archives
-    description: 可以根据归档日期检索所有文件
+  title: archives
+  description: 可以根据归档日期检索所有文件

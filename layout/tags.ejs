@@ -44,7 +44,7 @@ layout: layout
 
             <!-- 标签列表 -->
             <% site.tags.map(function(tag){ %>
-            <div class="one-tag-list">
+            <div class="one-tag-list" style="margin-top: 13px;">
                 <span class="fa fa-tag listing-seperator" id="<%= tag.name %>">
                     <span class="tag-text"><%= tag.name %></span>
                 </span>
@@ -52,20 +52,22 @@ layout: layout
                 <div class="post-preview">
                     <a href="<%- config.root %><%- post.path %>">
                         <h2 class="post-title">
-                            <%- post.title || "Untitled" %>
+                            <div class="post-time">
+                                <div><%- post.title || "Untitled" %></div>
+                                <div><%- date(post.date, "YYYY-MM-DD HH:mm:ss") || "1970-01-01" %></div>
+                            </div> 
                         </h2>
-                        <% if (post.subtitle && post.subtitle.length) { %>
+                        <!-- <% if (post.subtitle && post.subtitle.length) { %>
                         <h3 class="post-subtitle">
                             <%- post.subtitle %>
                         </h3>
-                        <% } %>
+                        <% } %> -->
                     </a>
                 </div>
                 <hr>
                 <% }) %>
             </div>
             <% }) %>
-
         </div>
     </div>
 </div>
