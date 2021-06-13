@@ -163,16 +163,12 @@ layout: layout
                     <% if(config['sidebar-avatar']) { %>
                     <img src="<%= config['sidebar-avatar'] %>"/>
                     <% } %>
-<<<<<<< Updated upstream
-                    <h5 style="font-size: 40px;"><a href="<%= config.root %>about/"><%= config.author %></a></h5>
-=======
                     <h5 style="font-size: 40px;">
                         <!-- <a href="<%= config.root %>about/">
                             <%= config.author %>
                         </a> -->
                         <%= config.author %>
                     </h5>
->>>>>>> Stashed changes
                     <% if(config['sidebar-about-description']) { %>
                     <p><%= config['sidebar-about-description'] %></p>
                     <% } %>
@@ -264,11 +260,7 @@ layout: layout
                 <div class="tags">
                     <% site.tags.map(function(tag){ %>
                         <% if(site.tags.length > config['featured-condition-size']) { %>
-<<<<<<< Updated upstream
-                        <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"
-=======
                         <a href="<%= config.root %>Tags/#<%= tag.name %>" title="<%= tag.name %>"
->>>>>>> Stashed changes
                         rel="<%= tag.length %>"><%= tag.name %></a>
                         <% } %>
                     <% }) %>
