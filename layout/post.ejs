@@ -183,6 +183,14 @@ layout: layout
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
+                    <h3 style="border-left: none; margin-top: 10px;">
+                        <!-- <% if (page.title.length <= 15 ) { %> 
+                            <%- page.title %> 
+                        <% } else { %> 
+                            <%- page.title.substring(0, 15) + ".." %>
+                        <% } %>   -->
+                        <%- truncate((page.title), {length: 15, omission: '..'}) %>
+                    </h3>
                     <%- toc(page.content, {list_number: false}) %>
                 </div>
             </div>

@@ -3,16 +3,26 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
+<<<<<<< Updated upstream
 title: # your site title
 subtitle:  
 author: # author
+=======
+title: chenxii
+subtitle:  
+author: chenxii
+>>>>>>> Stashed changes
 language: zh-CN
 timezone: 
 
 # custom Site settings
 # more detail check out docs
 SEOTitle: Chenxii's blog 
+<<<<<<< Updated upstream
 header-img: # /source/images/jpeg -> /images/xx.jpeg
+=======
+header-img: http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg
+>>>>>>> Stashed changes
 email: zhulongkun20@gmail.com
 description: ""
 keyword: 个人博客
@@ -158,6 +168,7 @@ cdn-url:  # 你的CDN地址
 
 # Qiniu imageView2 API
 # More info http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
+<<<<<<< Updated upstream
 clip-content: ""
 clip-avatar: ""
 clip-home-post-bg: ""
@@ -165,6 +176,15 @@ clip-home-post-bg: ""
 # post default images
 post-default-img: ""
 post-default-img-mobile: ""
+=======
+clip-content: "http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg"
+clip-avatar: "http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg"
+clip-home-post-bg: "http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg"
+
+# post default images
+post-default-img: http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg
+post-default-img-mobile: http://h2.ioliu.cn/bing/TulpenMiesbach_ZH-CN8593652929_1920x1080.jpg
+>>>>>>> Stashed changes
 
 # search api , set your custom key
 swiftype_key: 
